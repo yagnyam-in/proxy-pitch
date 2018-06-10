@@ -1,134 +1,149 @@
 <!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<html lang="en">
 
-    <title>Proxy</title>
+	<head>
+		<meta charset="utf-8">
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css">
+		<title>Proxy Demo</title>
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
 
-    <!-- Printing and PDF exports -->
-    <script>
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
-        document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
-</head>
-<body>
-<div class="reveal">
-    <div class="slides">
-        <section>
-            <h1>Proxy</h1>
-            <small>It's not that I have something to hide. I have nothing I want you to see</small>
-            <aside class="notes">
-                Notes for presentation
-            </aside>
-        </section>
-        <section>
-            <section>
-                <h2>Reproducible will always be reproduced</h2>
-                <aside class="notes">
-                </aside>
-            </section>
-            <section>
-                <h2>Cheque Forgery</h2>
-                <aside class="notes">
-                    Catch me if you can
-                </aside>
-            </section>
-            <section>
-                <h2>Credit card fraud</h2>
-                <aside class="notes">
-                    Card numbers can always be misused
-                </aside>
-            </section>
-            <section>
-                <h2>Fake Currency Notes</h2>
-                <aside class="notes">
-                    Currency notes are not exception
-                </aside>
-            </section>
-            <section>
-                <h2>Passwords</h2>
-                <ul>
-                    <li>2012 LinkedIn hack</li>
-                    <li>Equifax</li>
-                </ul>
-                <aside class="notes">
-                    If someone get hold of passwords either in logs or in transport, it can always be replayed
-                    The social networking website LinkedIn was hacked on 5 June 2012, and passwords for nearly 6.5 million user accounts were stolen by Russian cybercriminals
-                </aside>
-            </section>
-        </section>
-        <section>
-            <section>
-                <h2>They will track you</h2>
-                <small>if they can</small>
-                <aside class="notes">
-                </aside>
-            </section>
-            <section>
-                <h2>Global Advertising Spending in 2018</h2>
-                <h3>$558bn</h3>
-                <aside class="notes">
-                </aside>
-            </section>
-            <section>
-                <h2>Facebook</h2>
-                <aside class="notes">
-                    Recently we have seen how facebook misused the data
-                </aside>
-            </section>
-            <section>
-                <h2>Insiders</h2>
-                <aside class="notes">
-                    Many insiders can provide the information for ransoms.
-                </aside>
-            </section>
-        </section>
-        <section>
-            <section>
-                <h2>Solution</h2>
-            </section>
-            <section>
-                <h2>Proxy</h2>
-            </section>
-            <section>
-                <h2>Coming soon...</h2>
-            </section>
-        </section>
-        <section>
-            <h2>demo</h2>
-        </section>
-    </div>
-</div>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<script>
-    // More info about config & dependencies:
-    // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
-    Reveal.initialize({
-        dependencies: [
-            {src: 'plugin/markdown/marked.js'},
-            {src: 'plugin/markdown/markdown.js'},
-            {src: 'plugin/notes/notes.js', async: true},
-            {
-                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
-                    hljs.initHighlightingOnLoad();
-                }
-            }
-        ]
-    });
-</script>
-</body>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+								
+				<section>
+					<h3>Personal Data is New Currency<h3>
+						<h4>in the information Age</h4>
+				</section>
+		
+				<section>
+					<img data-src="data-breach.PNG">
+				</section>
+				
+				<section>
+					<img data-src="scattered-everywhere.PNG">
+				</section>
+
+				<section>
+					<img data-src="everywhere.PNG">
+				</section>
+
+				<section>
+					<h2>Solution</h2>
+					<ul>
+						<li>Leave no trace</sli>
+						<li>Reveal just what is required, No more No less</li>
+					</ul>
+				</section>
+				
+				<section>
+					<img data-src="no-trace.PNG">
+				</section>
+				
+				<section>
+					<img data-src="restricted.PNG">
+				</section>
+				
+				<section>
+					<h2>Proxy</h2>
+					<ul>
+						<li>No Customer Information</sli>
+						<li>Any number of proxies</li>
+						<li>Used for Digital Transactions</li>
+						<li>Authorised by Trusted Parties</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Proxy - Technical</h2>
+					<ul>
+						<li>Random & Uniq</li>
+						<li>Private Key on your phone</li>
+						<li>Possible to digitally Sign</li>
+					</ul>
+				</section>
+				
+
+				<section>
+					<h2>Demo Components</h2>
+					<ul>
+						<li>Proxy Mobile App</li>
+						<li>AliExpress as Merchant</li>
+						<li>Bunq App for Banking</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h4>Demo</h4>				
+					<video class="stretch" src="demo.mp4"></video>
+				</section>
+
+  
+				<section style="text-align: center;">
+					<h2>Questions???</h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
 </html>
