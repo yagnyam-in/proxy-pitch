@@ -1,149 +1,207 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-		<title>Proxy Demo</title>
+	<title>Proxy Demo</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
 
-		<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+	<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-								
-				<section>
-					<h3>Personal Data is New Currency<h3>
-						<h4>in the information Age</h4>
-				</section>
-		
-				<section>
-					<img data-src="data-breach.PNG">
-				</section>
-				
-				<section>
-					<img data-src="scattered-everywhere.PNG">
-				</section>
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
 
-				<section>
-					<img data-src="everywhere.PNG">
-				</section>
+			<section>
+				<h1>Proxy</h1>
+				<small>It's not that I have something to hide. I have nothing I want you to see</small>
+				<aside class="notes">
+					Notes for presentation
+				</aside>
+			</section>
 
-				<section>
-					<h2>Solution</h2>
-					<ul>
-						<li>Leave no trace</sli>
-						<li>Reveal just what is required, No more No less</li>
-					</ul>
-				</section>
-				
-				<section>
-					<img data-src="no-trace.PNG">
-				</section>
-				
-				<section>
-					<img data-src="restricted.PNG">
-				</section>
-				
+			<section>
+				<h1>Probelms</h1>
+				<ul>
+					<li>Personal data is new Currency</li>
+					<li>No Control over personal data</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Solution</h2>
+				<ul>
+					<li>Leave no trace</li>
+					<li>Reveal just what is required, No more</li>
+				</ul>
+			</section>
+
+			<section>
 				<section>
 					<h2>Proxy</h2>
 					<ul>
-						<li>No Customer Information</sli>
-						<li>Any number of proxies</li>
-						<li>Used for Digital Transactions</li>
-						<li>Authorised by Trusted Parties</li>
+						<li>Virtual Entity acting on behalf of Customer</li>
+						<li>No Customer Information</li>
+						<li>Disposable - Any number of proxies</li>
 					</ul>
 				</section>
 
 				<section>
 					<h2>Proxy - Technical</h2>
 					<ul>
-						<li>Random & Uniq</li>
+						<li>Random &amp; Uniq</li>
 						<li>Private Key on your phone</li>
-						<li>Possible to digitally Sign</li>
+						<li>Sign every message</li>
 					</ul>
 				</section>
-				
+			</section>
 
+			<section>
+				<h1>Use Cases</h1>
+				<small>With anonymity and signing &amp; verification capability, open up so many possiblities</small>
+			</section>
+
+			<section>
 				<section>
-					<h2>Demo Components</h2>
+					<h2>Identity</h2>
+				</section>
+				<section>
+					<h2>Full Anonymity</h2>
 					<ul>
-						<li>Proxy Mobile App</li>
-						<li>AliExpress as Merchant</li>
-						<li>Bunq App for Banking</li>
+						<li>None of the personal details are revealed</li>
+						<li>Still possible to verify validity</li>
 					</ul>
 				</section>
-				
 				<section>
-					<h4>Demo</h4>				
-					<video class="stretch" src="demo.mp4"></video>
+					<h2>Partial Anonymity</h2>
+					<ul>
+						<li>Limited information is revelated</li>
+						<li>Possible to validate 18+ etc, without revealing DOB</li>
+					</ul>
 				</section>
-
-  
-				<section style="text-align: center;">
-					<h2>Questions???</h2>
+				<section>
+					<h2>Disconnect any time</h2>
+					<ul>
+						<li>Customer can dispose proxy any time</li>
+						<li>Merchant can't reach customer any more</li>
+					</ul>
 				</section>
+			</section>
 
-			</div>
+
+			<section>
+				<section>
+					<h2>Banking &amp; Payments</h2>
+				</section>
+				<section>
+					<h2>Anonymous Banking</h2>
+					<ul>
+						<li>Proxy can view balances</li>
+						<li>Proxy can make Payments</li>
+						<li>No Banking details are revealed</li>
+					</ul>
+				</section>
+				<section>
+					<h2>IOT</h2>
+					<ul>
+						<li>With a single Tap, an IOT device will be alive</li>
+						<li>Can make payments even while offline</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Multi Party transactions</h2>
+				</section>
+				<section>
+					<h2>FX transactions</h2>
+					<ul>
+						<li>Two proxies sign a transition</li>
+						<li>Atomic Execution</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<h2>Demo Components</h2>
+				<ul>
+					<li>Proxy Mobile App</li>
+					<li>AliExpress as Merchant</li>
+					<li>Bunq App for Banking</li>
+				</ul>
+			</section>
+
+			<section>
+				<h4>Demo</h4>
+				<video class="stretch" src="demo.mp4"></video>
+			</section>
+
+			<section style="text-align: center;">
+				<h2>Questions???</h2>
+			</section>
 
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	</div>
 
-		<script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+	<script>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/search/search.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-		</script>
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/search/search.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
 
-	</body>
+	</script>
+
+</body>
+
 </html>
