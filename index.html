@@ -17,6 +17,12 @@
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
+	<!-- Proxy specific CSS -->
+	<link rel="stylesheet" href="css/proxy.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -151,6 +157,12 @@
 					</ul>
 				</section>
 			</section>
+			
+
+			<section class="diagramContainer" data-state="banking-demo">
+					<i class="material-icons md-128 topRight" id="bank">account_balance</i>
+					<i class="material-icons md-128 bottomLeft" id="proxy">account_box</i>
+			</section>
 
 			<section>
 				<h2>Demo Components</h2>
@@ -176,7 +188,8 @@
 
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>
-
+	<script src="https://jsplumbtoolkit.com/lib/jsplumb.min.js"></script>
+	<script src="js/proxy.js"></script>
 	<script>
 
 		// More info https://github.com/hakimel/reveal.js#configuration

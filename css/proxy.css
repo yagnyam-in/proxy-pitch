@@ -1,0 +1,46 @@
+.container {
+    position: fixed;
+    top: 16px;
+    left: 32px;
+}
+
+.topLeft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.topRight {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottomLeft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.bottomRight {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.center2 {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.diagramContainer {
+    padding: 20px;
+    width:100%; height: 80%;
+    border: 1px solid gray;
+    position:relative;
+}
+
+.material-icons.md-128 { font-size: 128px; }
