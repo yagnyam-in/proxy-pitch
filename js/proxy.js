@@ -7,11 +7,9 @@ Reveal.configure({
     }
 });
 
-Reveal.addEventListener( 'banking-demo', function() {
-	// TODO: Sprinkle magic
-}, false );
 
 Reveal.addEventListener('slidechanged', function (event) {
+    console.log("Got event slidechanged");
     animateNext();
 });
 
