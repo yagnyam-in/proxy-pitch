@@ -17,18 +17,20 @@
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/black.css" id="theme">
 
-    <!-- Proxy specific CSS -->
-    <link rel="stylesheet" href="css/proxy.css">
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
+    <link href="css/the-guide-styles.min.css" rel="stylesheet">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
 
+    <!-- Proxy specific CSS -->
+    <link rel="stylesheet" href="css/proxy.css">
+
+
     <!-- Printing and PDF exports -->
     <script>
-        var link = document.createElement('link');
+        let link = document.createElement('link');
         link.rel = 'stylesheet';
         link.type = 'text/css';
         link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
@@ -47,52 +49,72 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
 
-        <section data-state="startPage">
-            <h1>Nakamoto</h1>
+        <section>
+            <h2>Nakamoto</h2>
+            <p>Looking Bck &amp; Looking Fwd</p>
+        </section>
+
+        <!--section data-state="startPage">
+            <h2>Looking back</h2>
             <small id="noOfStories">60 stories</small>
+        </section-->
+
+        <section data-background-image="img/risk.gif" data-state="risk">
+            <h2>We survived the RISK</h2>
+            <p id="score">And managed to get <b style='color: red'>5.0</b> score</p>
+            <!--p>Thanks to Risk Ambassadors for the times they didn't miss</p-->
         </section>
 
-        <section>
-            <h1>Risk</h1>
-        </section>
-
-        <section data-background-image="img/risk.gif">
-            <h1>We survived</h1>
-            <small>Thanks to Risk Ambassadors for the times they didn't miss</small>
-        </section>
-
-        <section>
+        <section class="diagramContainer" data-state="tcps" id="tcps">
             <h2>TCPS Migration</h2>
+            <small id="accounts">Accounts migrated 0</small>
+            <img src="img/tcps.png">
         </section>
 
-        <section class="diagramContainer">
-            <div class="column0 row2 md-32"><img src="img/rip-tcps.png" alt="Smiley face" width="128" height="256"></div>
-        </section>
 
-
-        <section>
-            <h2>Partial Response</h2>
-        </section>
-
-        <section>
-            <h2>Business Goals</h2>
-        </section>
-
-        <section class="diagramContainer" data-state="banking-demo">
-            <i class="material-icons md-128 topRight" id="bank">account_balance</i>
-            <i class="material-icons md-128 bottomLeft" id="proxy">account_box</i>
-        </section>
-
-        <section class="diagramContainer">
-            <small class="column0 row0 md-32"><i class="material-icons md-64">stay_current_portrait</i></small>
-            <small class="column0 row2 md-32"><img src="img/wink.png" alt="Smiley face" width="48" height="48"></small>
-            <small class="column0 row4 md-32"><i class="material-icons md-64">desktop_windows</i></small>
+        <section class="diagramContainer" data-state="partialResponse" id="partialResponse">
+            <small class="column3 row0" style="color: orange">S/M Partial Response</small>
+            <i id="mobile" class="material-icons md-64 column0 row0">stay_current_portrait</i>
+            <img src="img/wink.png" alt="Smiley face" width="48" height="48" id="enticements" class="column0 row2">
+            <i id="ming" class="material-icons md-64 column0 row4">desktop_windows</i>
             <small id="sm" class="column2 row2">Savings/Me</small>
-            <small id="holderAgreements" class="column4 row1">Self Accounts</small>
+            <small id="holderAgreements" class="column4 row1">Holder Accounts</small>
             <small id="proxyAgreements" class="column4 row3">Proxy Accounts</small>
             <small id="accountDetails" class="column7 row0">Interest etc</small>
             <small id="targets" class="column7 row2">Target</small>
             <small id="names" class="column7 row4">Names</small>
+        </section>
+
+
+        <section class="diagramContainer" data-state="goals" id="goals">
+            <h2>Saldorekening</h2>
+            <small>Why should particulier have all the fun??</small>
+            <table id="grid" class="tg table-grid">
+            </table>
+        </section>
+
+        <section data-state="ten24">
+            <h2>Looking forward</h2>
+            <p id="ten24">1024</p>
+            <ul>
+                <li>Integrate with Overview Api</li>
+                <ul>
+                    <li>Mobile &amp; D20 will connect to Savings/Me</li>
+                </ul>
+                <li>Goal API</li>
+                <ul>
+                    <li>Risk &amp; Cassandra</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section data-state="tibco">
+            <h2>Looking forward</h2>
+            <p id="tibco">TIBCO Super heroes</p>
+            <ul>
+                <li>Permanent Holds</li>
+                <li>IFSA decommission</li>
+            </ul>
         </section>
 
     </div>
@@ -105,6 +127,11 @@
 <script src="js/proxy.js"></script>
 <script src="js/anime.min.js"></script>
 <script src="js/start.js"></script>
+<script src="js/partialResponse.js"></script>
+<script src="js/goals.js"></script>
+<script src="js/risk.js"></script>
+<script src="js/tcps.js"></script>
+
 <script>
 
     // More info https://github.com/hakimel/reveal.js#configuration

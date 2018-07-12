@@ -56,6 +56,15 @@
 }
 
 
+.icon.md-128 {
+    font-size: 128px;
+}
+
+.icon.md-64 {
+    font-size: 64px;
+}
+
+
 .column0 {
     position: absolute;
     left: 0;
@@ -123,7 +132,7 @@
 
 #interestOnly {
     border-radius: 25px;
-    border: 2px solid #17ff2e;
+    border: 2px solid #51483D;
     padding: 10px;
     width: 192px;
     height: 32px;
@@ -131,7 +140,7 @@
 
 #productType {
     border-radius: 25px;
-    border: 2px solid #17ff2e;
+    border: 2px solid #51483D;
     padding: 10px;
     width: 192px;
     height: 32px;
@@ -148,7 +157,7 @@
 
 #holderAgreements {
     border-radius: 25px;
-    border: 2px solid #17ff2e;
+    border: 2px solid #51483D;
     padding: 10px;
     width: 192px;
     height: 32px;
@@ -157,7 +166,7 @@
 
 #proxyAgreements {
     border-radius: 25px;
-    border: 2px solid #17ff2e;
+    border: 2px solid #51483D;
     padding: 10px;
     width: 192px;
     height: 32px;
@@ -166,7 +175,7 @@
 
 #accountDetails {
     border-radius: 25px;
-    border: 2px solid #17ff2e;
+    border: 2px solid #51483D;
     padding: 10px;
     width: 192px;
     height: 32px;
@@ -174,7 +183,7 @@
 
 #targets {
     border-radius: 25px;
-    border: 2px solid #17ff2e;
+    border: 2px solid #51483D;
     padding: 10px;
     width: 192px;
     height: 32px;
@@ -182,12 +191,89 @@
 
 #names {
     border-radius: 25px;
-    border: 2px solid #17ff2e;
+    border: 2px solid #51483D;
     padding: 10px;
     width: 192px;
     height: 32px;
 }
 
+.line {
+    width: 100%;
+    padding: 1px 0px;
+}
 
+.square {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin: 1px;
+    font-size: 12px;
+    background-color: orangered;
+}
 
+.small {
+    width: 18px;
+    height: 18px;
+}
 
+.large {
+    width: 48px;
+    height: 48px;
+}
+
+.stretched {
+    height: 2px;
+}
+
+.shadow {
+    position: absolute;
+    opacity: .2;
+}
+
+.motion-path {
+    position: relative;
+    width: 256px;
+    margin: auto;
+}
+
+.follow-path {
+    position: absolute;
+    top: -9px;
+    left: -9px;
+}
+
+.demo {
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 35px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+.demo-content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    width: 290px;
+    height: 100%;
+}
