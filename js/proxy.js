@@ -1,18 +1,5 @@
 
 
-Reveal.configure({
-    keyboard: {
-        13: 'next',
-        32: animateNext
-    }
-});
-
-
-Reveal.addEventListener('slidechanged', function (event) {
-    //console.log("Got event slidechanged");
-    //animateNext();
-});
-
 function animateNext() {
     jsPlumb.ready(function () {
         console.log('animateNext', Reveal.getCurrentSlide());
@@ -48,18 +35,52 @@ Reveal.addEventListener( 'ten24', function() {
 
 }, false);
 
+const names = [
+    "T",
+    "TI",
+    "TIB",
+    "TIBC",
+    "TIBCO",
+    "TIBCO Z",
+    "TIBCO ZE",
+    "TIBCO Z",
+    "TIBCO",
+    "TIBCO H",
+    "TIBCO HE",
+    "TIBCO HER",
+    "TIBCO HERO",
+    "TIBCO HEROE",
+    "TIBCO HEROES",
+    "TIBCO HEROE",
+    "TIBCO HERO",
+    "TIBCO HER",
+    "TIBCO HE",
+    "TIBCO H",
+    "TIBCO",
+    "TIBCO S",
+    "TIBCO SU",
+    "TIBCO SUP",
+    "TIBCO SUPE",
+    "TIBCO SUPER",
+    "TIBCO SUPER H",
+    "TIBCO SUPER HE",
+    "TIBCO SUPER HER",
+    "TIBCO SUPER HERO",
+    "TIBCO SUPER HEROE",
+    "TIBCO SUPER HEROES",
+];
 Reveal.addEventListener( 'tibco', function() {
     const name = "TIBCO SUPER HEROES";
     let counter = {value: 0};
     const tibco = document.querySelector('#tibco');
     anime({
         targets: counter,
-        value: name.length,
+        value: names.length-1,
         round: 1,
-        duration: 3000,
+        duration: 9000,
         easing: 'linear',
         update: function(a) {
-            tibco.innerHTML = name.substr(0, counter.value);
+            tibco.innerHTML = names[counter.value]//name.substr(0, counter.value);
         }
     });
 

@@ -11,7 +11,7 @@ Reveal.addEventListener( 'risk', function() {
         direction: 'reverse',
         easing: 'linear',
         update: function() {
-            scoreEl.innerHTML = "And managed to get <b style='color: red; font-size: 64px'>" + (riskScore.value/10) +  "</b> score";
+            scoreEl.innerHTML = "And managed to get <b style='color: red; font-size: 128px'>" + (riskScore.value/10).toString().padEnd(3, ".0") +  "</b> score";
         }
     });
 }, false );
